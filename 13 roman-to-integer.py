@@ -5,6 +5,7 @@ class Solution:
         result = 0
         while i < len(s):
             if i+1 < len(s):
+                # minus in cases like 9 (IX) or 4 (IV)
                 if dict.get(s[i]) < dict.get(s[i+1]):
                     result += dict.get(s[i+1]) - dict.get(s[i])
                     i +=2
