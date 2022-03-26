@@ -17,6 +17,7 @@ class Solution:
         queue = []
         count = 1
         queue.append((x,y))
+
         #check the visited tile to zero so we dont have to visit it again
         grid[x][y] = 0
         
